@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lat_kuis/component/input_form.dart';
 import 'package:lat_kuis/pages/home_page.dart';
 
 class LoginPage extends StatelessWidget {
@@ -37,8 +38,16 @@ class LoginPage extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        _inputform(username, 'Username', false, Icons.person),
-                        _inputform(password, 'Password', true, Icons.lock),
+                        InputForm(
+                            controller: username,
+                            hintText: 'Username',
+                            obscureText: false,
+                            icon: Icons.person),
+                        InputForm(
+                            controller: password,
+                            hintText: 'Password',
+                            obscureText: true,
+                            icon: Icons.lock),
                         SizedBox(height: 12),
                         ElevatedButton(
                             onPressed: () {
@@ -90,20 +99,6 @@ class LoginPage extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-
-  Widget _inputform(TextEditingController controller, String hintText,
-      bool obscureText, IconData icon) {
-    return TextField(
-      controller: controller,
-      obscureText: obscureText,
-      decoration: InputDecoration(
-          prefixIcon: Icon(icon),
-          hintText: hintText,
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15),
-          )),
     );
   }
 }

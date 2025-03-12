@@ -1,16 +1,17 @@
-# lat_kuis
+# Tugas 2 Praktikum Mobile - Latihan Kuis
 
-A new Flutter project.
+Suruh buat halaman :
 
-## Getting Started
+- Login
+- Menu menampilkan menu makanan
+- Detail makanan dengan perkalian yang dipesan
 
-This project is a starting point for a Flutter application.
+### Perintah Tugas
 
-A few resources to get you started if this is your first Flutter project:
+Soal ada di : `soal/Tugas 2.pdf`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Preview Program
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](soal/gambar1.png)
+![image](soal/gambar2.png)
+![image](soal/gambar3.png)
